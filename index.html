@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>What's your favorite?</h1>
+        <form id="Name">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+        </form>
+        <form id="color">
+          <div class="form-group">
+            <label for="color">Color:</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+        </form>
+        <form id="reason">
+          <div class="form-group">
+            <label for="reason">reasons:</label>
+            <input id="reason" class="form-control" type="text">
+          </div>
+        </form>
+        <form id="iceCream">
+          <div class="form-group">
+            <label for="iceCream">Favorite Ice Cream:</label>
+            <select class="form-control" id="iceCream">
+              <option value="1">Strawberry</option>
+              <option value="2">Vanilla</option>
+              <option value="3">Chocolate</option>
+              <option value="4">Cookie Dough</option>
+            </select>
+          </div>
+        </form>
+        <form id="pets">
+          <div class="radio">
+            <label for="pets">Favorite Type of Pet:</label>
+            <br>
+            <label>
+              <input type="radio" name="petType" value="dog" checked>
+              Dog
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="petType" value="cat">
+              Cat
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="petType" value="fish">
+              Goldfish
+            </label>
+          </div>
+        </form>
+        <div class="popup-overlay">
+  <!--Creates the popup content-->
+   <div class="popup-content">
+      <p> Thankyou for submitting.</p>
+     <!--popup's close button-->
+      <button class="close">Close</button>    </div>
+</div>
+<!--Content shown when popup is not displayed-->
+<button class="open">Submit</button>
+
+
+  </body>
+</html>
